@@ -4,6 +4,10 @@ describe BookmarksController do
   describe "routing" do
 
     it "routes to #index" do
+      get(root_path).should route_to("bookmarks#index")
+    end
+
+    it "routes to #index" do
       get("/bookmarks").should route_to("bookmarks#index")
     end
 

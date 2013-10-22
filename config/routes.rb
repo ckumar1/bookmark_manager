@@ -3,6 +3,8 @@ BookmarkManager::Application.routes.draw do
 
   root 'bookmarks#index'
 
+  # match '/help', to: 'static_pages#help', via: 'get'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

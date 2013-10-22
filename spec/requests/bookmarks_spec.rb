@@ -15,9 +15,15 @@ describe "Bookmarks" do
 
   describe "View all bookmarks home page" do
     before { visit root_path }
-
-    it { should have_content('Sign up') }
-    it { should have_title(full_title('Sign up')) }
+    it { should have_content('My bookmarks') }
+    it { should have_title('All Bookmarks') }
   end
+
+  describe "View create new bookmark page" do
+    before { visit new_bookmark_path }
+    it { should have_content('New bookmark') }
+    it { should have_title('New Bookmark') }
+  end
+
 
 end
